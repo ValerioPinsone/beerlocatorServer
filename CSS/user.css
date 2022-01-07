@@ -1,0 +1,51 @@
+.user__container{
+    background-color:rgb(27, 27, 27);
+    height:100px;
+    max-width: 450px;
+    margin: auto;
+}
+
+#userPhoto{
+    height:100px;
+    float: left;
+}
+.user__name{
+    color: #ffcc00;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    font-weight: bolder;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+.user__title{
+    color: silver;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    font-style: oblique;
+    font-size: 15px;
+    position: relative;
+    top:-10px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+
+
+/*Desktop version*/
+@media (min-width:800px){
+
+    .user__container{
+        
+        height:150px;
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    #userPhoto{
+        height:150px;
+        
+    }
+    .user__name{
+        font-size: 20px;
+    }
+    
+}

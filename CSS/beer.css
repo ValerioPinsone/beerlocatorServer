@@ -1,0 +1,494 @@
+.beer__container{
+    background-color: #252525;
+    color:#818181;
+    padding:10px;
+    border-radius: 2px;
+    font-family: Garamond, serif;
+    font-size: 20px;
+    margin: 50px auto 0 auto;
+
+    max-width: 450px;
+    
+}
+
+
+.beer__logo{
+    width:40%;
+    max-width:200px;
+    position: relative;
+    top: -50px;
+
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+}
+
+.beer__info__container{
+    
+    width:58%;
+    max-width:250px;
+    height:100px;
+    float:right;
+    
+    
+}
+
+.beer__info__alcol{
+    
+    width: 50%;
+    height:50px;
+    float:left;
+    border-right: 1px solid rgba(201, 201, 201, 0.055);
+   
+}
+
+.beer__info__star{
+    
+    width: 50%;
+    height:50px;
+    float:right;
+    
+}
+.beer__info__ibu{
+   
+    width: 50%;
+    height:50px;
+    float:left;
+    border-right: 1px solid rgba(201, 201, 201, 0.055);
+}
+
+.beer__info__srm{
+   
+    width: 50%;
+    height:50px;
+    float:right;
+}
+
+.beer__info__country{
+   
+    width: 50%;
+    height:50px;
+    float:left;
+    border-right: 1px solid rgba(201, 201, 201, 0.055);
+}
+
+.beer__info__type{
+   
+    width: 50%;
+    height:50px;
+    float:right;
+}
+
+.beer__info__elem{
+    text-align: center;
+    line-height: 1;
+}
+.beer__info__title{
+    margin-top: 5px;
+    font-size: 120%;
+    color:rgb(238, 238, 238);
+}
+.beer__info__subtitle{
+    font-size: 60%;
+}
+
+.beer__name__container{
+    
+    width:40%;
+    max-width:200px;
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+.beer__name{
+    color:rgb(238, 238, 238);
+    font-size: 20px;
+}
+.manufacturer__name{
+    font-size: 60%;
+}
+
+.beer__description{
+    font-size: 15px;
+    line-height: 1.5;
+    height:200px;
+    position: relative;
+    top:-25px;
+    overflow-y: scroll;
+    
+    
+}
+
+
+.buttons__50{
+    
+    height:80px;
+    max-width:350px;
+    
+    margin: 30px auto;
+}
+
+.beer__button {
+    
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width:48%;
+    cursor: pointer;
+  }
+
+  .left {
+     background-color: #ffcc00; 
+     color: black;
+     float:left;
+  }
+  .right {
+    background-color: #26a860; 
+    color: black;
+    float:right;
+  }
+
+  .left:hover {
+    background-color: #bb9600; 
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    outline: none;
+    
+ }
+
+ .right:hover {
+    background-color: #136e3c; 
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    outline: none;
+    
+  }
+
+  .right:active{
+      position: relative;
+      top:2px;
+  }
+
+  .left:active{
+    position: relative;
+    top:2px;
+}
+
+
+.beer__gallery__container{
+    
+    margin:20px auto;
+    padding:auto;
+    max-width: 450px;
+    height:240px;
+    overflow: hidden;
+    color: #c09f1b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.199),#333);
+    
+}
+
+.beer__gallery__container p {
+    margin:5px;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    text-shadow: black;
+  
+}
+.beer__photo{
+    
+    
+    width:22%;
+    margin:4px;
+    float:left;
+    
+   
+}
+
+.beer__photo:hover{
+    
+    position: relative;
+    top: -2px;
+    
+}
+.beer__photo:active{
+    
+    position: relative;
+    top: 2px;
+   
+}
+
+.beer__top5users__container{
+    
+    height:90px;
+    width: 98%;
+    margin: auto;
+}
+
+
+.beer__top5users__container__inside{
+    background-image: url(../DATA/LAYOUT/3dbgusers.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:90px;
+    max-width: 450px;
+    margin: auto;
+}
+
+.beer__top5users__container__inside p{
+    text-align: center;
+    color: #ffcc00;
+    
+    font-family: ProximaNova,Helvetica,sans-serif;
+    text-shadow: black;
+    font-size: 20px;
+}
+
+
+.user__photo__top5{
+    
+    
+    width:15%;
+    margin:2%;
+    float:left;
+    align-items: center;
+    border-radius: 50px;
+  
+}
+
+.user__photo__top5:hover{
+    
+    position: relative;
+    top:-5px;
+    
+}
+
+.number1{
+    border: 3px solid gold;
+}
+.number2{
+    border: 2px solid silver;
+}
+.number3{
+    border: 2px solid rgb(146, 73, 13);
+}
+
+.comments__container{
+    
+    margin-top: 80px;
+    
+}
+.comments{
+    background: rgb(36, 36, 36);
+    margin: 30px auto;
+    max-width: 400px;
+    min-height: 100px;
+    border-radius: 4px;
+}
+
+.comments__user__pic{
+    
+    width:64px;
+    margin:2%;
+    float:left;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    top:-30px;
+}
+
+.comments__user__name{
+    font-family: ProximaNova,Helvetica,sans-serif;
+    color: #ffcc00;
+    font-size: 18px;
+    padding-top:6px;
+}
+
+.comments__text{
+    margin-top: 39px;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    color: silver;
+    padding:15px;
+    position: relative;
+    top: -30px;
+}
+
+.comments__buttons{
+    
+    position: relative;
+    top: -48px;
+    right:10px;
+    padding:2px;
+}
+
+.comments__buttons__button{
+    float:right;
+    font-size: 10px;
+    background-color: transparent;
+    border: none;
+    margin:2px;
+    color: rgb(155, 155, 155);
+    padding:2px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.comments__buttons__button:hover{
+    color: #ffcc00; 
+}
+
+.comments__buttons__button:active{
+    color: gold; 
+}
+
+.comments__showmore{
+    font-family: ProximaNova,Helvetica,sans-serif;
+    
+    border: 1px solid #ffcc0075;
+    padding:20px;
+    margin: auto;
+    max-width:400px;
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+.comments__showmore a{
+    color: silver;
+}
+
+.comments__write{
+    font-family: ProximaNova,Helvetica,sans-serif;
+    background-color: rgb(34, 34, 34);
+    border-radius: 4px;
+    padding:10px 10px 50px 10px;
+    margin: 30px auto;
+    max-width:400px;
+    
+   
+}
+
+.comments__write textarea{
+    width: 100%;
+    height:100px;
+    padding:10px;
+    resize: none;
+}
+
+.comments__write input{
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    float: right;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+}
+
+.comments__write input:hover{
+    background-color: #977900;
+    color: white;
+}
+
+/*flags*/
+
+.phoca-box {
+	width: 32%;
+	float: left;
+	position: relative;
+	height: 100px;
+}
+.phoca-flagbox {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+    top:-6px;
+    left: -6px;
+}
+.phoca-flag {
+	/*position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;*/
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: inset 0px 0px 0px 1px #fff;
+	box-shadow: inset 0px 0px 0px 1px #fff;
+}
+
+/*media query for Desktop version (width>800px)*/
+@media (min-width:800px){
+    .beer__container{
+        margin: 50px 0 0 20px;
+        max-width: 450px;
+        
+    }
+
+    .buttons__50{
+        margin:20px 70px;
+    }
+    .beer__description{
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .beer__gallery__container{
+        margin:0;
+        float: right;
+        
+        max-width: 300px;
+        max-width: 36%;
+        position: relative;
+        top:-576px;
+        right:20px;
+        height:450px;
+        overflow: hidden;
+        border-radius: 4px;
+        padding-left: 12px;
+        
+    }
+    .beer__photo{
+        width: 30%;
+        margin:2px;
+        
+    }
+
+    .beer__top5users__container{
+        width: 36%;
+        margin: 0;
+        position: relative;
+        display: block;
+        float: right;
+        right: -277px;
+        top:-99px;
+        
+    }
+
+    .comments__container{
+        margin-top: 160px;
+    }
+}
+
+/*fix*/
+@media (min-width:910px){
+    .beer__top5users__container{
+        right: -305px;
+    }
+}
+
+@media (min-width:960px){
+    .beer__top5users__container{
+        right: -320px;
+    }
+}
+/* /fix */
