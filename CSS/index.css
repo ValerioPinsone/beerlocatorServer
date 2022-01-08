@@ -1,0 +1,80 @@
+
+#cercaBirra{
+    position: relative;
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    font-family: ProximaNova,Helvetica,sans-serif;
+    
+    
+}
+
+#searchIco{
+    position: relative;
+    float: right;
+    top:-29px;
+    right: 8px;
+    
+}
+
+/* BUTTONS */
+.buttons__50{
+    
+    height:80px;
+    max-width:350px;
+    
+    margin: 20px auto;
+}
+
+
+.beer__button {
+    
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width:48%;
+    cursor: pointer;
+  }
+
+  .left {
+     background-color: #ffcc00; 
+     color: black;
+     float:left;
+  }
+  .right {
+    background-color: #26a860; 
+    color: black;
+    float:right;
+  }
+
+  .left:hover {
+    background-color: #bb9600; 
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    outline: none;
+    
+ }
+
+ .right:hover {
+    background-color: #136e3c; 
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    outline: none;
+    
+  }
+
+  .right:active{
+      position: relative;
+      top:2px;
+  }
+
+  .left:active{
+    position: relative;
+    top:2px;
+}
+/* BUTTONS END*/

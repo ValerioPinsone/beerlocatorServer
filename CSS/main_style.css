@@ -144,9 +144,11 @@ body{
   }
 /*Side NAVBAR END*/  
 
+hr{
+  border: solid rgb(70, 70, 70) 1px;
+}
 
-
-/*obhect container*/
+/*object container*/
 .object__container{
     background-color: #252525;
     color:#818181;
@@ -219,6 +221,6 @@ body{
     
 
       .object__container{
-        margin:0;
+        margin:1; /*mod*/
       }
   }
