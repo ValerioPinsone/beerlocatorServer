@@ -5,7 +5,7 @@
     //echo json_encode(array('beer_name' => "funziona"));
     $beer_name_search = $_REQUEST["q"];
     $beer_name_search = strtolower($beer_name_search);
-    $sql = "SELECT * FROM beers WHERE beer_name like '%".$beer_name_search."%' limit 3";
+    $sql = "SELECT * FROM beers WHERE beer_name like '%".$beer_name_search."%' limit 5";
     
     $result = $conn->query($sql);
     
@@ -13,11 +13,10 @@
     if(!$result) {
         exit("Nessuna corripondenza");
     }else{
-        $i = 0;
+       
         if(mysqli_num_rows($result) > 0 ){
-            while(mysqli_fetch_assoc($result)){
-                $i++;
-                $row = mysqli_fetch_assoc($result);
+            while($row = mysqli_fetch_assoc($result)){
+                
                 
                 if(isset($row['beer_id'])&&isset($row['beer_name'])){
                 $beer_id = $row["beer_id"];
@@ -29,7 +28,7 @@
                 }
                    
 
-                echo "<a href='BEER/?id=".$beer_id."'>".$beer_name."</a></br>";
+                echo "<section class='searchSuggestion_item_in'><a href='BEER/?id=".$beer_id."'>".$beer_name."</a></br></section>";
             }
         }else{
            

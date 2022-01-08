@@ -22,12 +22,31 @@
     background-color: rgba(0, 0, 0, 0.178);
     padding:8px;
     border-radius: 0 0 10px 10px;
+    
 }
 
 .searchSuggestion_item{
-    
+
     margin:4px;
 }
+
+.searchSuggestion_item_in{
+
+    border-top: solid 0.5px black;
+    padding:2px;
+    margin:10px 0;
+    position: relative;
+    top:5px;
+}
+
+
+
+a:link , a:visited{
+    
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
 
 /* BUTTONS */
 .buttons__50{
