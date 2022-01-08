@@ -13,7 +13,7 @@
     <!--Side Navbar-->
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="../HOME">Home</a>
+        <a href="../">Home</a>
         <a href="#">Info</a>
         <a href="#">Contatti</a>
         <a href="../AUTH">Login</a>
@@ -35,7 +35,7 @@
                     <li><a href="../AUTH">Login</a></li>
                     <li><a href="#">Contatti</a></li>
                     <li><a href="#">Info</a></li>
-                    <li><a href="../HOME">Home</a></li>
+                    <li><a href="../">Home</a></li>
                 </ul>
             
             </div>

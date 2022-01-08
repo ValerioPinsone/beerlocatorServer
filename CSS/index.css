@@ -18,6 +18,17 @@
     
 }
 
+#searchSuggestion{
+    background-color: rgba(0, 0, 0, 0.178);
+    padding:8px;
+    border-radius: 0 0 10px 10px;
+}
+
+.searchSuggestion_item{
+    
+    margin:4px;
+}
+
 /* BUTTONS */
 .buttons__50{
     
@@ -78,3 +89,5 @@
     top:2px;
 }
 /* BUTTONS END*/
+
+
