@@ -28,7 +28,7 @@
                 }
                    
 
-                echo "<section class='searchSuggestion_item_in'><a href='BEER/?id=".$beer_id."'>".$beer_name."</a></br></section>";
+                echo "<section class='searchSuggestion_item_in'><a href='../BEER/?id=".$beer_id."'>".$beer_name."</a></br></section>";
             }
         }else{
            
