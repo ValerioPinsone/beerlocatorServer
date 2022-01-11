@@ -1,0 +1,43 @@
+#numRis{
+    color: rgb(168, 168, 168);
+    margin-left: 10px;
+}
+
+.beerElem{
+   
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    
+    float: left;
+    margin: 35px 10px;
+    text-align: center;
+    
+    
+}
+
+.beerElem_title{
+    color: gold;
+    font-size: 15px;
+    left:6px;
+    position: relative;
+    top:-6px;
+    overflow: hidden;
+    
+    
+}
+
+.beer__logo{
+    width:100%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+
+.beerElem__container{
+    display: inline-block;
+}
+
+a:link {
+    text-decoration: none;
+}

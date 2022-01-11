@@ -1,5 +1,5 @@
 <?php
-    $page_title = "Birra - NOME";
+    $page_title = "BeerLocator - Birra";
     require "../LAYOUT/header.php";
 ?>
 

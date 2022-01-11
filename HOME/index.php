@@ -11,8 +11,10 @@
         
         <section class="object__container">
             <div>
-                <input type="text" id="cercaBirra" placeholder="Cerca birra" onkeyup="showHint(this.value)">
-                <span class="material-icons" id="searchIco">search</span>
+                <form action="../BEER/search.php/" method="GET">
+                    <input type="text" name="q" id="cercaBirra" placeholder="Cerca birra" onkeyup="showHint(this.value)">
+                    <span class="material-icons" id="searchIco">search</span>
+                </form>
             </div>
             <div id="searchSuggestion">
                 <section class="searchSuggestion_item" id="suggestion1">
