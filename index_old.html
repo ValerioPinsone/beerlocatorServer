@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/main_style.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/flags.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title><?php $page_title; ></title>
+</head>
+<body>
+    <!--Side Navbar-->
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Info</a>
+        <a href="#">Contatti</a>
+        <a href="#">Login</a>
+    </div>
+    <!-- / Side Navbar -->
+
+    <div class="body__container" id="body__container">
+    <!-- BODY CONTAINER -->
+
+        <div class="navbar" id="navbar">
+            <div class="navbar__container">
+                <div class="hamburger" onclick="myFunction(this);openNav();" id="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <img src="DATA/LAYOUT/blogo.png" id="logo">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contatti</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <div class="pusher" id="pusher"></div>
+        <!--CORPO PAGINA-->
+        <div class="corpoPagina" id="corpoPagina">
+            <!--USE object__container -->
+
+
+
+
+
+
+
+        </br></br>
+        
+            <section class="object__container">
+                <div>
+                    <input type="text" id="cercaBirra" placeholder="Cerca birra" onkeyup="showHint(this.value)">
+                    <span class="material-icons" id="searchIco">search</span>
+                </div>
+                <div id="searchSuggestion">
+                    <section class="searchSuggestion_item" id="suggestion1">
+                        
+                    </section>
+                    
+                </div>
+            </section>
+
+        </br><hr></br>
+
+            <section class="object__container">
+                <section class="buttons__50">
+                    <button class="beer__button left"><span class="material-icons md-36">edit_location</span></br>Registra</button>
+                    <button class="beer__button right"><span class="material-icons md-24">map</span></br>Localizza</button>
+                </section>
+            </section>
+
+        </br><hr></br>
+    
+
+
+
+
+
+
+        <!--Auto suggestion script-->
+            <script>
+                
+                function showHint(str) {
+                if (str.length == 0) {
+                    document.getElementById("cercaBirra").innerHTML = "";
+                    document.getElementById("suggestion1").style.display = "none";
+                    return;
+                } else {
+                    document.getElementById("suggestion1").style.display = "block";
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("suggestion1").innerHTML = this.responseText;
+                    }
+                    };
+                    xmlhttp.open("GET", "SCRIPT/PHP/search_suggestion_engine.php?q=" + str, true);
+                    xmlhttp.send();
+                }
+                }
+            </script>
+        <!-- / Auto suggestion script-->
+        
+        <!-- / CORPO PAGINA -->    
+        </div>
+
+    <!-- / BODY CONTAINER -->   
+    </div>
+
+    
+     <!--FOOTER-->
+     <div class="footer__container">
+         <div class="footer__line">
+
+         </div>
+        
+         <div class="footer__end__line">
+            <div class="footer">
+                - BeerLocator 2021 - <br>
+                Powered by x
+            </div>
+         </div>
+     </div>
+
+
+    <!--HAMBURGER ANIMATION-->
+    <script>
+        function myFunction(x) {
+          //x.classList.toggle("hamburger-animation");
+        }
+    </script>
+
+    <!--MOBILE NAVBAR MENU ANIMATION-->
+    <script>
+        function openNav() {
+        document.getElementById("sidenav").style.width = "250px";
+        //document.getElementById("body__container").style.marginRight = "250px";
+        //document.getElementById("hamburger").style.right = "250px";
+        document.getElementById("logo").style.left = "-250px";
+        document.getElementById("corpoPagina").style.left = "-250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+        //document.getElementById("body__container").style.marginRight= "0";
+        //document.getElementById("hamburger").style.display = "inline-block";
+        document.getElementById("logo").style.left = "0px";
+        }
+    </script>
+
+
+    <!--SCROLL NAVBAR ANIMATION-->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if(screen.width<=800){ //mobile
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("navbar").style.height = "60px";
+                    document.getElementById("pusher").style.height = "60px";
+                    document.getElementById("logo").style.top = "-8px";
+                    document.getElementById("logo").style.height = "30px";
+                    document.getElementById("hamburger").style.top = "-11px";
+                } else {
+                    document.getElementById("navbar").style.height = "80px";
+                    document.getElementById("pusher").style.height = "80px";
+                    document.getElementById("logo").style.top = "0px";
+                    document.getElementById("logo").style.height = "35px";
+                    document.getElementById("hamburger").style.top = "0px";
+                }
+            } //Desktop (add else)
+              
+            
+        }
+    </script>
+</body>
+</html>

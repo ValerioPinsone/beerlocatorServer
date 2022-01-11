@@ -11,7 +11,7 @@
         
         <section class="object__container">
             <div>
-                <form action="../BEER/search.php/" method="GET">
+                <form action="../BEER/search.php/" autocomplete="off" method="GET">
                     <input type="text" name="q" id="cercaBirra" placeholder="Cerca birra" onkeyup="showHint(this.value)">
                     <span class="material-icons" id="searchIco">search</span>
                 </form>

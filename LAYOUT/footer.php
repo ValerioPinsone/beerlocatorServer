@@ -13,8 +13,11 @@
     
      <div class="footer__end__line">
         <div class="footer">
-            - BeerLocator 2021 - <br>
-            Powered by x
+        - BeerLocator <?php echo date("Y"); ?> v0.1.0 - <br>
+            Beer Management by  Simone Pignatelli <br>
+            Coded by Valerio Pinsone <br>
+            
+            <span class="material-icons md-24">sports_bar</span><br>
         </div>
      </div>
  </div>

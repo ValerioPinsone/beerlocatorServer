@@ -29,6 +29,12 @@
                 $beer_srm = $row["beer_color_srm"];
                 $beer_type_id = $row["beer_type_id"];
                 $beer_manufacturer_id = $row["beer_manufacturer_id"];
+                $beer_visual = $row["beer_visual"];
+
+                $beer_visual += 1;
+                $sql = "UPDATE beers SET beer_visual=".$beer_visual." WHERE beer_id=".$beer_id;
+                $conn->query($sql);
+
 
                 $sql = "SELECT * FROM types WHERE type_id = '".$beer_type_id."'";
                 $result = $conn->query($sql);
@@ -77,8 +83,8 @@
     </section>
 
     <section class="beer__info__star beer__info__elem">
-        <section class="beer__info__title">12893</section>
-        <section class="beer__info__subtitle">Preferiti</section>
+        <section class="beer__info__title"><?php echo $beer_visual; ?></section>
+        <section class="beer__info__subtitle">Visual</section>
     </section>
 
     <section class="beer__info__ibu beer__info__elem">
