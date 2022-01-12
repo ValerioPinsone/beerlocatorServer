@@ -1,3 +1,57 @@
-input {
-    background-color: red;
-}
+.barcode__button {
+    
+    border: none;
+    
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    float:left;
+    font-size: 15px;
+    width:100px;
+    cursor: pointer;
+    
+    background-color: #e68301; 
+     color: black;
+
+     margin:5px;
+     border-radius: 10px;
+
+     display: inline-block;
+     z-index: 0;
+     
+  }
+
+  .barcode__button:active{
+        color:white;
+  }
+  
+
+  .barcode__container{
+    display: inline-block;
+    
+    
+  }
+
+  .barcode__button__info{
+      font-size: 16px;
+      padding: 10px 15px;
+      position: relative;
+      margin-left:105px;
+      line-height: 20px;
+
+      
+      
+      
+      
+  }
+
+
+  .orDiv{
+      text-align: center;
+      color: rgb(116, 116, 116);
+  }
+ 
+  .barcode_limit{
+      min-width: 300px;
+      max-width: 400px;
+  }

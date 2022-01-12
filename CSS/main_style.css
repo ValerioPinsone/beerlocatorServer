@@ -223,4 +223,8 @@ hr{
       .object__container{
         margin:1; /*mod*/
       }
+
+      .footer{
+        font-size: 12px !important;
+      }
   }
